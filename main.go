@@ -11,13 +11,10 @@ import (
 )
 
 func main() {
-
 	mdPath := flag.String("m", ".", "md path")
 	htmlPath := flag.String("h", ".", "html path")
 	flag.Parse()
-
 	process(*mdPath, *htmlPath)
-
 }
 
 func process(inPath string, outPath string) {
